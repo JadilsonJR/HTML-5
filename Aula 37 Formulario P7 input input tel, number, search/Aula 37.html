@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Aula 37 Formulario P7 input input tel, number, search
+	</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		form{
+			border: 1px solid #000;
+			padding: 10px;
+			border-radius: 15px;
+			background-color: #EEE;
+		}
+		.quebra{
+			display: block;
+		}
+		.esp{
+			margin-top: 15px;
+		}
+		.espaco{
+			margin-bottom: 15px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 	
+		INPUT: Type Atributos
+		pattern = serve para fazer um padrao pode ser de celular ou cep ou cpf algo do tipo 
+		placeholder= mostra para o usuario o modelo que deve ser seguido 
+
+	  -->
+	<form name="f_cadastro" method="get" action="#">
+		<label class="quebra">Telefone:</label>
+		<input type="tel" name="f_tel" pattern="\([0-9]{2}\)[9]{1}[0-9]{4}[0-9]{4}" placeholder="(xx)9xxxx-xxxx" maxlength="14">
+
+		<label class="quebra">Senha:</label>
+		<input type="password" name="f_sen" pattern="[a-zA-Z0-9]{5}">
+
+		<label class="quebra">Escolha um Numero:</label>
+		<input type="number" name="f_num" step="2" min="0" max="10">
+
+			
+		<label class="quebra">Pesquisa:</label>
+		<input type="search" name="f_pes">
+
+		<input class="quebra esp " type="submit" name="f_enviar">
+			
+	</form>
+		
+	
+</body>
+</html>

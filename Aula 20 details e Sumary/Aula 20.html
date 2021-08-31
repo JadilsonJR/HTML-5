@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Aula 20 details e Summary  
+	</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		summary::-webkit-details-marker{
+			color: red;
+		}
+
+		details[open] summary::-webkit-details-marker{
+			color: blue;
+		}
+
+		article{
+			width: 130px;
+			background-color: #ddd;
+			border: 1px solid #000;
+			border-radius: 20px;
+			padding: 15px;
+			margin-top:10px; 
+		}
+
+		details{
+			display: inline-block;
+		
+		}
+		summary{
+			width: 160px;
+			text-align: center;
+			background-color: #888;
+			display: inline-block;
+
+		
+		}
+		p{
+			line-height: 0.4;
+		}
+	</style>
+</head>
+<body>
+	<!-- 
+		Detais propriedades:
+		open = abre a Caixa
+
+		summary é o titulo da caixa details -->
+
+	<details>
+		<summary> Curso de Html</summary>
+		<article class="cx1">
+			<li type="circle">HTML 5</li>
+			<li type="square">CSS</li>
+			<li>Java Script</li>
+			<li>C++</li>
+			<li>QtCreator</li>
+		</article>
+		<article class="cx2">
+			<p>HTML 5</p>
+			<p>CSS</p>
+			<p>Java Script</p>
+			<p>C++</p>
+			<p>QtCreator</p>
+		</article>
+	</details>
+</body>
+</html>

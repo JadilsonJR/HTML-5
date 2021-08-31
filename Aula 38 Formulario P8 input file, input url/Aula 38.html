@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Aula 38 Formulario P8 input File e Url
+	</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		form{
+			border: 1px solid #000;
+			padding: 10px;
+			border-radius: 15px;
+			background-color: #EEE;
+		}
+		.quebra{
+			display: block;
+		}
+		.esp{
+			margin-top: 15px;
+		}
+		.espaco{
+			margin-bottom: 15px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 	
+		INPUT: Type Atributos
+		File - Permite o envio de Arquivos
+		Atributos File:
+			multiple (boolean) varios arquivos
+			accept=".jpg," serve para filtra qual arquivo vc quer
+			accept=".doc , .docx"
+		URL
+
+	  -->
+	<form name="f_cadastro" method="get" action="#" enctype="multipart/form-data">
+
+		<label class="quebra">Selecione o Arquivos:</label>
+		<input type="file" name="f_arquivo" multiple="" accept=".doc">
+
+		<label class="quebra">Digite o Url:</label>
+		<input type="url" name="f_url">
+	
+		<input class="quebra esp " type="submit" name="f_enviar">
+			
+	</form>
+		
+	
+</body>
+</html>

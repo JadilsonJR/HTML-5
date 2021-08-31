@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Aula 33 Formulario input type 
+		Password Checkbox radio
+	</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		form{
+			border: 1px solid #000;
+			padding: 10px;
+			border-radius: 15px;
+			background-color: #EEE;
+		}
+		.quebra{
+			display: block;
+		}
+		.esp{
+			margin-top: 15px;
+		}
+		.espaco{
+			margin-bottom: 15px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 
+	INPUT: atributos 
+	maxlength - serve para delimitar os caracteres
+	size - mostra o tamanho da caixa 
+		
+	INPUT:type existentes
+	password:serve para senhas 
+	checked serve para marca automaticamente
+		
+	  -->
+	<form name="f_cadastro" method="get" action="#">
+
+		<label>Username:</label>
+		<input class="espaco quebra" type="text" name="f_nome">
+		<label>Senha:</label>
+		<input class="espaco quebra" type="password" name="f_senha" maxlength="6" size="10">
+		
+		<label class="quebra">Esportes Favoritos</label>
+		<input type="checkbox" name="f_fut" value="futebol">Futebol
+		<input type="checkbox" name="f_f1" value="formula1">Formula 1
+		<input type="checkbox" name="f_vol" value="volei">Volei
+		<input class="quebra esp" type="submit" name="f_entrar" value="Entrar">
+		
+		<label class="quebra esp">Possui Carros ?</label>
+		<input type="radio" name="f_carro" value="s" checked="">Sim
+		<input type="radio" name="f_carro" value="n">Não	
+	</form>
+		
+	
+</body>
+</html>

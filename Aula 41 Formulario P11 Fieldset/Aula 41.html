@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Aula 41 Formulario P11 
+	</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		form{
+			border: 1px solid #000;
+			padding: 10px;
+			border-radius: 15px;
+			background-color: #EEE;
+		}
+		.quebra{
+			display: block;
+		}
+		.esp{
+			margin-top: 15px;
+		}
+		.espaco{
+			margin-bottom: 15px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 	
+		INPUT: Type Atributos
+		Fieldset - serve para separa conjuntos
+		legend - serve para ser a legenda da Fieldset
+		atributos de Fieldset
+		disabled - desabilita os campos 
+	  -->
+	<form name="f_cadastro" method="get" action="#">
+		<fieldset disabled="">
+			<legend>Dados 1 </legend>
+			<label for="f_nome">Nome:</label>
+			<input class="quebra" type="text" name="f_nome" id="f_nome">
+			<br>
+			<label for="f_telefone">Telefone:</label>
+			<input class="quebra" type="tel" name="f_telefone" id="f_telefone">		
+		<br>
+		</fieldset>
+		<br>
+		<br>
+		<fieldset>
+			<legend>Dados 2 </legend>
+			<label class="quebra" for="f_nome">Possui Carro:</label>
+			<input type="radio" name="f_carro" id="f_carro" value="s">SIM<br>
+			<input  type="radio" name="f_carro" id="f_carro" value="n" >NAO<br>
+			<br>
+			<label class="quebra" for="f_nome">Possui Casa Propria:</label>
+			<input type="radio" name="f_casa" id="f_casa" value="s">SIM<br>
+			<input  type="radio" name="f_carro" id="f_carro" value="n" >NAO<br>	
+		</fieldset>
+		
+
+		<input class="quebra esp" type="submit" name="f_enviar">	
+	</form>
+		
+	
+</body>
+</html>
